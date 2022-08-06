@@ -1,1 +1,113 @@
-style.css
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+}
+
+.highScore{
+    color: rgb(152, 72, 228);
+}
+
+header{
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.introCard{
+    text-align: center;   
+    line-height: .2;
+}
+
+.introCard h1{
+    font-size: 50px;
+}
+
+.introCard p{
+    font-size: 20px;
+}
+
+.startButton{
+    background: rgb(61, 8, 121);
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 2em;
+    line-height: 16px;
+    max-width: 255px;
+    padding: 20px 52px;
+    text-align: center;
+}
+
+.startButton{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1183px) {
+    main {
+      flex-direction: column;
+    }
+  
+    .word-guess,
+    .results {
+      width: 90vw;
+    }
+  
+    section {
+      background-color: white;
+      margin: 20px auto;
+      width: 92vw;
+    }
+  }
+  
+  @media screen and (max-width: 504px) {
+    .large-font {
+      font-size: 2em;
+    }
+  
+    .reset-button {
+      font-size: 12px;
+      width: 20ox;
+      
+    }
+  
+    .timer {
+      height: 200px;
+    }
+  }
