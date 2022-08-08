@@ -9,27 +9,63 @@
 
     <body>
         <header>
-            <section class="highScore">
-                View Highscores
-            </section>
-
-            <section class="Timer">
-                Time:
-            </section>
+        <h4 id="view-high-score">View High Score</h4>
+        <h4 class="timer">Time: <span id="timer"></span></h4>
         </header>
 
         <main>
-            <section class="cardQuestion">
-                <section class="introCard">
+            <section id="starter-container" class="show">
+                <section class="container start">
                     <h1>Coding Quiz Challenge</h1>
                     <p>Try to answer the following code-related questions within the time limit.</p>
                     <p>Keep in mind that incorrect answers will penalize your score/time</p>
                     <p>by ten seconds!</p>
-                    <section class="startButton">
-                        Start Quiz
-                    </section>
+                  <button class="btn startend" id="startQuiz">Start Quiz</button>
+            </section>
+          </section>   
+
+          <section id="questionCard" class="hide">
+            <section class="container questions">
+                <section id="question"></section>
+                <section id="answerButton" class="btn-grid"></section>
+            </section>
+          </section> 
+
+        <section id="finishCard" class="hide">
+            <section class="container end">
+                <section id="score-banner">
+                    <h1>All done!</h1>
                 </section>
             </section>
+
+            <section>
+                <form id="initial-form" class="initials">
+                    <p>Enter initials:
+                    <input type="text" name="initials" id="initials" class="text-input"/>
+                   <button class="btn startend" id="submit-score" type="submit">submit</button></p> 
+                 </form>
+                </section>
+
+        </section>
+
+        <section id="high-Score-Container" class="hide">
+            <section class="high-scores container">
+                <h1 class="high-score">HighScores:</h1>
+                <ol id="high-score-list" class="score-list"></ol>
+            <section>
+                <button class="btn" id="go-back">Go back</button>
+                <button class="btn" id="clear-high-scores">clear high scores</button>
+            </section>
+            </section>
+        </section>
+
+        <section class="hide" id="correct">
+            <h2>correct</h2>
+        </section>
+
+        <section class="hide" id="wrong">
+            <h2>wrong</h2>
+        </section>
 
         </main>
         <script src="assets/script.js"></script>
