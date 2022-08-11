@@ -11,7 +11,7 @@ Once all the questions have been answered or the timer runs out, the quiz will e
 
 
 ## Installation
-link to website:
+link to website: https://ckrum21.github.io/Code-Quiz/
 link to GitHub: https://github.com/ckrum21 
 
 Install this website by cloning the code to your local devices.
